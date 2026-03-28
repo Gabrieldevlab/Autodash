@@ -68,7 +68,8 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginAsEmployee, onLoginAs
 
   const handleAdminLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (adminCode === '040511') {
+    const validCode = import.meta.env.VITE_ADMIN_CODE || '040511';
+    if (adminCode === validCode) {
       onLoginAsAdmin();
     } else {
       setError('Código de acesso inválido');
