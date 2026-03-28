@@ -1,0 +1,7 @@
+{
+  "name": "Autodash",
+  "description": "Sistema completo de gestão para oficinas mecânicas e funilarias com controle de estoque, ordens de serviço, dashboard financeiro e painel administrativo.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
